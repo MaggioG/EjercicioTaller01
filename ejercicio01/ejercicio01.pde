@@ -6,6 +6,9 @@ public void setup(){
   distanciaAlBorde=20;
   puntoA=new PVector(distanciaAlBorde,distanciaAlBorde);
   puntoB=new PVector(width-distanciaAlBorde,distanciaAlBorde);
+  puntoC=new PVector(width/2,height/2);
+  puntoD=new PVector(distanciaAlBorde,height-distanciaAlBorde);
+  puntoE=new PVector(width-distanciaAlBorde,height-distanciaAlBorde);
 }
 
 public void draw(){
@@ -16,4 +19,7 @@ public void dibujarPuntos(){
   strokeWeight(10);
   point (puntoA.x,puntoA.y);
   point (puntoB.x,puntoB.y);
+  point (puntoC.x,puntoC.y);
+  point (puntoD.x,puntoD.y);
+  point (puntoE.x,puntoE.y);
 }
