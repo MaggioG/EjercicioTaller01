@@ -11,10 +11,12 @@ public void setup(){
 
 public void draw(){
   dibujarRectangulos();
+  fill (#CEB002);
 }
 
 public void dibujarRectangulos(){
   for(float x=coordenadasRect.x; x<width;x+=(ancho+distanciaEntreRect)){
-    rect(x, coordenadasRect.y, ancho, alto);
+    for(float y=coordenadasRect.y; y<height;y+=(alto+distanciaEntreRect))
+    rect(x, y, ancho, alto);
   }
 }
